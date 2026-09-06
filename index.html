@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 5 - Alan Turing: El Padre de la Computación</title>
+
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <style>
+    /* 
+      DEMOSTRACIÓN DE ESPECIFICIDAD (CSS Interno):
+      Esta regla asigna font-size: 15px a los párrafos <p>.
+      Sin embargo, prevalecen las reglas con mayor especificidad como .destacado 
+      o los estilos en línea.
+    */
+    p { 
+      font-size: 15px; 
+    }
+  </style>
+</head>
+<body>
+
+  <header id="encabezado">
+    <div>
+      <h1>Alan Turing</h1>
+      <p class="lema">Alan Turing, padre de la inteligencia artificial</p>
+    </div>
+    <nav>
+      <a href="#sobre-mi">Biografía</a>
+      <a href="#inventos">Logros</a>
+      <a href="#cronologia">Cronología</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>El Padre de la Informática Moderna</h2>
+      
+      <figure class="foto-perfil">
+        <img src="imagenes/turing.jpg" alt="Retrato de Alan Turing">
+        <figcaption>Alan Turing (1912-1954)</figcaption>
+      </figure>
+
+      <p class="destacado">
+        Alan Turing fue un matemático, lógico, científico de la computación, criptógrafo y filósofo británico, considerado uno de los padres de la ciencia de la computación y precursor de la inteligencia artificial.
+      </p>
+      <p>
+        Su trabajo en Bletchley Park durante la Segunda Guerra Mundial fue fundamental para descifrar los códigos de la máquina Enigma alemana, lo que salvó millones de vidas y acortó la guerra significativamente.
+      </p>
+      <a href="https://es.wikipedia.org/wiki/Alan_Turing" target="_blank" class="boton-enlace">Saber más en Wikipedia</a>
+    </section>
+
+    <section id="inventos">
+      <h2>Grandes Aportaciones e Ideas</h2>
+      <ul>
+        <li class="tarjeta"><strong>Máquina de Turing:</strong> Modelo matemático abstracto que definió el concepto moderno de algoritmo y computadora.</li>
+        <li class="tarjeta"><strong>Descifrado de Enigma:</strong> Diseñó la máquina "Bombe", capaz de romper las criptografías militares nazis.</li>
+        <li class="tarjeta"><strong>Test de Turing:</strong> Criterio propuesto en 1950 para evaluar si una máquina puede exhibir comportamiento inteligente.</li>
+      </ul>
+    </section>
+
+    <section id="cronologia">
+      <h2>Hitos Históricos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Año</th>
+            <th>Evento</th>
+            <th>Impacto Histórico</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1936</td>
+            <td>Publicación de la Máquina Universal</td>
+            <td>Sentó las bases teóricas de la informática moderna.</td>
+          </tr>
+          <tr>
+            <td>1939</td>
+            <td>Llegada a Bletchley Park</td>
+            <td>Lideró la sección dedicada a romper el código naval Enigma.</td>
+          </tr>
+          <tr>
+            <td>1950</td>
+            <td>Publicación del Test de Turing</td>
+            <td>Inició el debate pionero sobre la Inteligencia Artificial.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <aside>
+      <h3>Dato Histórico Curioso</h3>
+      <!-- 
+        DEMOSTRACIÓN DE ESPECIFICIDAD (CSS en línea):
+        El atributo style="" tiene la máxima prioridad de especificidad (1,0,0,0),
+        por lo que prevalece sobre los selectores de tipo, clase e ID del CSS externo e interno.
+      -->
+      <p style="color: #8E44AD; font-style: italic; font-weight: bold;">
+        Este párrafo usa estilo en línea (style="") y prevalece sobre las reglas del CSS externo e interno debido a su alta especificidad (1,0,0,0).
+      </p>
+    </aside>
+  </main>
+
+  <footer id="pie">
+    <p>Yanderi jaqueline valencia de los santos LSC &mdash; UNACH &mdash; Práctica 5 &mdash; 2026</p>
+  </footer>
+
+</body>
+</html>

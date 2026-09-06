@@ -1,0 +1,174 @@
+/* coding: utf-8 */
+
+/* ── 1. Reinicio Global (Selector Universal) ── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ── 2. Selectores de Tipo (Estilos Base) ── */
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #F4F6F7;
+}
+
+/* Selector agrupado */
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #1A5276;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+a {
+    color: #C0392B;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de Tabla de 3 columnas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #D5D8DC;
+}
+
+th {
+    background-color: #1A5276;
+    color: #FFFFFF;
+}
+
+/* ── 3. Selectores de Identificador (#id) ── */
+#encabezado {
+    background-color: #1A5276;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Selector descendiente */
+#encabezado h1 {
+    color: #FFFFFF;
+    font-size: 28px;
+}
+
+/* Selector descendiente */
+nav a {
+    color: #FFFFFF;
+    padding: 0 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #F39C12;
+}
+
+#pie {
+    background-color: #1A5276;
+    color: #BDC3C7;
+    text-align: center;
+    padding: 16px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* ── 4. Estructura Principal ── */
+main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section, aside {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* ── 5. Selectores de Clase (.clase) ── */
+.lema {
+    font-size: 14px;
+    font-style: italic;
+    color: #F39C12;
+    margin-top: 2px;
+}
+
+.destacado {
+    background-color: #FEF9E7;
+    border-left: 4px solid #F39C12;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.tarjeta {
+    background-color: #FFFFFF;
+    border: 1px solid #D5D8DC;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    list-style: none;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
+}
+
+.boton-enlace {
+    display: inline-block;
+    background-color: #C0392B;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.boton-enlace:hover {
+    background-color: #922B21;
+    text-decoration: none;
+}
+
+/* ── 6. Estilos de la Foto de Perfil ── */
+.foto-perfil {
+    float: right;
+    margin: 0 0 15px 20px;
+    text-align: center;
+}
+
+.foto-perfil img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #1A5276;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.foto-perfil figcaption {
+    font-size: 12px;
+    color: #7F8C8D;
+    margin-top: 5px;
+    font-style: italic;
+}
